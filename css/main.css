@@ -1,0 +1,259 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	box-sizing: border-box;
+}
+
+body a:hover,body a:visited,body a:focus{
+	text-decoration: none;
+}
+
+#app{
+	background-image: url(/rsa-website/img/background2.png);
+	position: absolute;	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#box{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 80px 60px;
+}
+
+#container{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background-color: #ffffff;
+	opacity: 0.5;
+	/* 设置圆角 */
+	border: 3px solid rgba(0,0,0,0);
+	border-radius: 25px;
+}
+
+#header{
+	position: relative;
+	height: 7%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	flex-direction: row;
+	/* background-color: #ff0000; */
+}
+
+#content{
+	position: relative;
+	height: 86%;
+	width: 100%;
+}
+
+#footer{
+	height: 7%;
+	width: 100%;
+	padding-right: 10px;
+	display: flex;
+	align-items: center;
+}
+
+/*  设置头部内容  */
+#header ul{
+	display: inline;
+}
+
+#header ul li{
+	display: inline;
+	color: #000000;
+	margin-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	opacity: 1;
+}
+
+#header ul li a:visiter{
+	text-decoration: none;
+}
+
+#header a{
+	margin-bottom: 10px;	
+	color: #000000;
+}
+
+#header a:hover{
+	text-decoration: none;
+}
+
+#header li:hover{
+	border-bottom: 2px solid #7B5471;
+}
+
+#github{
+	position: absolute;
+	right: 60px;
+}
+
+/*  设置正文内容  */
+#content{
+	display: flex;
+	flex-direction: row;
+}
+
+.passage{
+	display: inline-block;
+	position: relative;
+	width: 60%;
+	height: 100%;
+	padding-left: 40px;
+}
+
+.passage p{
+	text-indent: 2em;
+	font-size: 18px;
+	color: #000000;
+}
+
+
+
+/* .picture{
+	position: relative;
+	top:0;
+	left: 0;
+	display: inline-block;
+	margin-left: 10px;
+	padding-left: 40px;
+} */
+.picture{
+	width: 40%;
+	height: 100%;
+	padding-left: 120px;
+	padding-top: 100px;
+}
+/* .picture img{
+	opacity: 1;
+} */
+
+/*  设置footer内容  */
+
+#footer{
+	position: relative;
+}
+
+#footer ul{
+	position: absolute;
+	right: 90px;
+}
+
+#footer ul li{
+	display: inline;
+	padding-left: 10px;
+}
+
+#footer p{
+	display: inline;
+}
+
+#footer a{
+	color: #000000;
+}
+
+.list{
+	position: absolute;
+}
+
+#slide-button{
+	position: absolute;
+	display: inline-block;
+	width: 10%;
+}
+
+.cube1,.cube2{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #633B60;
+}
+
+.cube1 p,.cube2 p a{
+	color: #ffffff;
+}
+
+.cube1{
+	height: 40px;
+	width: 210px;
+	right: 90px;
+	top:-45px;
+}
+
+.cube2{
+	height: 40px;
+	width: 140px;
+	right: 49px;
+	top: -45px;
+}
+
+#footer .cube2 p a{
+	color: #ffffff;
+}
+
+.cube1::after{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	right: 42%;
+	top:40px;
+	border-top: 26px solid #633B60;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+}
+
+.cube2::after{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	right: 40%;
+	top: 40px;
+	border-top: 26px solid #633B60;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+}
+
+.hide{
+	display: none;
+}
+
+/* .cube1::after{
+
+} */
+
+/* #footer a:hover{
+	text-decoration: none;
+}  */
+
+/* #box1{
+	height: 100%;
+	width: 100%;
+} */
+
+/* 1920*1080 */
+/* #box2{
+	height: 880px;
+	width: 1800px;
+	background-color: #598B93;
+	opacity: 0.5;
+} */
+
+/* 如何实现一个随着浏览器可见页面大小改变的页面？ */
+
+
+/*  设置轮播图  */
+#slice{
+	position: absolute;
+}

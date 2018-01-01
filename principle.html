@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- 缺少一个icon图标 -->
+	<title>算法原理</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="app">
+		<div id="box">
+			<div id="container">
+				<div id="header">
+					<ul>
+						<li><a href="./index.html">主页</a></li>
+						<li><a href="#">算法原理</a></li>
+						<li><a href="./algorithm.html">涉及算法</a></li>
+						<li><a href="./simulation.html">模拟仿真</a></li>
+					</ul>
+					<a id="github" href="http://www.github.com"><i class="fa fa-github  fa-lg"></i></a>
+				</div>
+				<div id="content">
+					<div class="passage">
+						<h1>算法原理</h1>
+						<h2>加密算法</h2>
+						<p>
+							RSA算法中模数n是两个大素数p和q的乘积，公钥e和模数n是公开的，而私钥d是保密的。RSA算法的加密过程就是通过n和e将明文M（M&lt;n）转化成密文C。
+						</p>
+						<p>
+							若用整数M表示明文，用整数C表示密文(M，C&lt;n)，则加密和解密运算为：
+						</p>
+						<p>
+							加密：C = M<sup>e</sup> mod n	（其中(M,n)=1）
+						</p>
+						<p>
+							解密：M = C<sup>d</sup> mod n	
+						</p>
+					</div>
+					<div class="picture">
+						<img src="./img/creator.jpg">
+					</div>
+				</div>
+				<div id="footer">
+					<div class="cube1 hide">
+						<p>邮箱：zhanghao@xiyouant.org</p>
+					</div>
+					<div class="cube2 hide">
+						<p><a href="http://www.ewinds.pw">我的博客</a></p>
+					</div>
+					<ul>
+						<li>
+							<p>作者：Michael Zhang | Copyright&copy;2017-2018</p>
+						</li>
+						<li id="suggestion"><a href="#">意见建议</a></li>
+						<li id="friendlyLink"><a href="#">友情链接</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- 加载jQuery -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

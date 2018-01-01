@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- 缺少一个icon图标 -->
+	<title>RSA算法模拟平台</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="app">
+		<div id="box">
+			<div id="container">
+				<div id="header">
+					<ul>
+						<li><a href="#">主页</a></li>
+						<li><a href="./principle.html">算法原理</a></li>
+						<li><a href="./algorithm.html">涉及算法</a></li>
+						<li><a href="./simulation.html">模拟仿真</a></li>
+					</ul>
+					<a id="github" href="http://www.github.com"><i class="fa fa-github  fa-lg"></i></a>
+				</div>
+				<div id="content">
+					<div class="passage">
+						<h1>初识</h1>
+						<p>
+							RSA是目前最有影响力和最常用的公钥加密算法，它能够抵抗到目前为止已知的绝大多数密码攻击。 RSA公开密钥密码体制。所谓的公开密钥密码体制就是使用不同的加密密钥与解密密钥，即非对称密码，是一种“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。
+						</p>
+						<p>
+							RSA为发明者三人姓氏开头字母拼在一起组成的。三人分别是：罗纳德·李维斯特（Ron Rivest）、阿迪·萨莫尔（Adi Shamir）和伦纳德·阿德曼（Leonard Adleman）
+						</p>
+						<p>
+							在公开密钥密码体制中，加密密钥（即公开密钥）PK是公开信息，而解密密钥（即秘密密钥）SK是需要保密的。加密算法E和解密算法D也都是公开的。虽然解密密钥SK是由公开密钥PK决定的，但却不能根据PK计算出SK。
+						</p>
+						<p>
+							正是基于这种理论，1978年出现了著名的RSA算法，它通常是先生成一对RSA 密钥，其中之一是保密密钥，由用户保存；另一个为公开密钥，可对外公开，甚至可在网络服务器中注册。为提高保密强度，RSA密钥至少为500位长，一般推荐使用1024位。这就使加密的计算量很大。为减少计算量，在传送信息时，常采用传统加密方法与公开密钥加密方法相结合的方式，即信息采用改进的DES或IDEA对话密钥加密，然后使用RSA密钥加密对话密钥和信息摘要。对方收到信息后，用不同的密钥解密并可核对信息摘要。
+						</p>
+						<p>
+							RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA是被研究得最广泛的公钥算法，从提出到现今的三十多年里，经历了各种攻击的考验，逐渐为人们接受，截止2017年被普遍认为是最优秀的公钥方案之一。
+						</p>
+					</div>
+					<div class="picture">
+						<img src="./img/creator.jpg">
+					</div>
+				</div>
+				<div id="footer">
+					<div class="cube1 hide">
+						<p>邮箱：zhanghao@xiyouant.org</p>
+					</div>
+					<div class="cube2 hide">
+						<p><a href="http://www.ewinds.pw">我的博客</a></p>
+					</div>
+					<ul>
+						<li>
+							<p>作者：Michael Zhang | Copyright&copy;2017-2018</p>
+						</li>
+						<li id="suggestion"><a href="#">意见建议</a></li>
+						<li id="friendlyLink"><a href="#">友情链接</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- 加载jQuery -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
