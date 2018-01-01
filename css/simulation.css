@@ -1,0 +1,36 @@
+.left-passage{
+    position: relative;
+    float: left;
+    width: 52%;
+    height: 100%;
+    padding-right: 40px;
+}
+
+.right-passage{
+    position: relative;
+    float: left;
+    padding-left: 50px;
+    width: 45%;
+    height: 100%;
+    border-left: 1px solid #000000;
+}
+
+#content .passage ul{
+    padding-left: 0;
+}
+
+#content .passage ul li{
+    list-style: none;
+}
+#content .passage ul li p{
+    text-indent: 0;
+}
+
+#content  small{
+    display: block;
+    padding-bottom: 5px;
+}
+
+.right-passage label{
+    font-weight: normal;
+}
